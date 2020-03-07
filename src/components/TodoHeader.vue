@@ -10,8 +10,8 @@ export default {
   // }
   created() {
     this.num = this.num + 1;
-    // var h1 = document.querySelector('h1');
-    // console.log('created', h1);
+    var h1 = document.querySelector('h1');
+    console.log('created', h1);
   },
   beforeMount () {
     // var h1 = document.querySelector('h1');
