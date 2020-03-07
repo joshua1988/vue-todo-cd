@@ -1,5 +1,5 @@
 <template>
-  <h1>할 일 관리 앱</h1>
+  <h1>할 일 관리 앱을 배포해보자</h1>
 </template>
 
 <script>
