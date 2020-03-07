@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title>todo-app</title>
-    <!-- #1 -->
     <link rel="manifest" href="manifest.json">
   </head>
   <body>
@@ -14,6 +13,13 @@
       <strong>We're sorry but todo-app doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
     <div id="app"></div>
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js')
+          .then(swReg => console.log(swReg))
+          .catch(error => console.log(error))
+      }
+    </script>
     <!-- built files will be auto injected -->
   </body>
 </html>
